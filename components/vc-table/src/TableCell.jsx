@@ -83,7 +83,7 @@ export default {
     }
 
     if (column.customCell) {
-      tdProps = mergeProps(tdProps, column.customCell(record, index));
+      tdProps = mergeProps(tdProps, column.customCell(record, index, column, { expandIcon }));
     }
 
     // Fix https://github.com/ant-design/ant-design/issues/1202
